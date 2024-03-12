@@ -53,7 +53,7 @@ export const authOptions: AuthOptions = {
     }),
   ],
   pages: {
-    signIn: "/", // redirect users here if authentication fail, and one more thing this route should exist.
+    signIn: "/",
   },
   debug: process.env.NODE_ENV === "development",
   session: {

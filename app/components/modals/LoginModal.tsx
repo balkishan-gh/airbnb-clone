@@ -44,21 +44,14 @@ const LoginModal = () => {
 
       if (callback?.ok) {
         toast.success("Logged in");
-        // setTimeout(() => {
-        //   toast.success("Logged in");
-        // }, 1000);
         router.refresh();
         loginModal.onClose();
       }
 
       if (callback?.error) {
         toast.error(callback.error);
-        // setTimeout(() => {
-        //   toast.error(callback.error);
-        // }, 1000);
       }
     });
-    // why is there no catch block? because user not found in database doesn't mean it's an error
   };
 
   const onToggle = useCallback(() => {
@@ -109,7 +102,7 @@ const LoginModal = () => {
       text-neutral-500 text-center mt-4 font-light"
       >
         <p>
-          First time using Fairbnb?
+          First time using Airbnb?
           <span
             onClick={onToggle}
             className="
@@ -131,7 +124,7 @@ const LoginModal = () => {
       disabled={isLoading}
       isOpen={loginModal.isOpen}
       title="Login"
-      actionLable="Continue"
+      actionLabel="Continue"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}
