@@ -5,6 +5,7 @@ import LoginModal from "@/app/components/modals/LoginModal";
 import RegisterModal from "@/app/components/modals/RegisterModal";
 import SearchModal from "@/app/components/modals/SearchModal";
 import RentModal from "@/app/components/modals/RentModal";
+import Hero from "./components/Hero";
 
 import ToasterProvider from "@/app/providers/ToasterProvider";
 
